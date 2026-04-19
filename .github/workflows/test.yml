@@ -2,7 +2,7 @@ name: Github Actions Test
 on: [push]
 jobs:
   Test:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run:echo "hello lele"
       - run:echo "${{ github.event_name }}"  
