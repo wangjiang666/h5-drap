@@ -1,0 +1,8 @@
+name: Github Actions Test2
+on: [push]
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello lele2"
+      - run: echo "${{ github }}"  
