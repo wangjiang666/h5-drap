@@ -13,7 +13,6 @@ jobs:
           script: |
             cd /
             cd nginx
-            rm -rf h5-drap
             git clone git@github.com:wangjiang666/h5-drap.git -b ${{ github.ref_name }}
             cd h5-drap
             npm install
