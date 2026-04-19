@@ -14,6 +14,6 @@ jobs:
             cd /
             cd nginx
             rm -rf dist
-            git clone https://github.com/wangjiang666/h5-drap.git -b ${{ github.ref_name }}
+            git clone git@github.com:wangjiang666/h5-drap.git -b ${{ github.ref_name }}
             npm install
             npm run build
