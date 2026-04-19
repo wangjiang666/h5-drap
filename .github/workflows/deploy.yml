@@ -11,7 +11,9 @@ jobs:
           password: ${{secrets.SSH_PWD}} 
           script_stop: true
           script: |
-            ls -al
-            touch test.txt
-            echo "hello lele ai" >>  test.txt
-            cat test.txt
+            cd /
+            cd nginx
+            rm -rf dist
+            git clone git@github.com:wangjiang666/h5-drap.git -b ${{ github.ref_name }}
+            npn install
+            npm run build
